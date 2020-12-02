@@ -3,7 +3,7 @@ data = fid.readlines()
 fid.close()
 
 for x in range(len(data)):
-    for y in range(x, len(data)):
+    for y in range(x + 1, len(data)):
         if int(data[x]) + int(data[y]) == 2020:
             val1 = int(data[x])
             val2 = int(data[y])
